@@ -181,115 +181,152 @@
 // birthday.setHours(3);
 // console.log(birthday);
 
-const color = 'bluee';
-switch (color) {
-  case 'red':
-    console.log('color is red');
-    break;
-  case 'blue':
-    console.log('color is blue');
-    break;
-  default:
-    console.log('color is not blue & red');
-    break;
-} 
-switch (new Date().getDay()) {
-  case 0:
-    day = 'sunday'
-    break;
-  case 1:
-    day = 'monday'
-    break;
-  case 2:
-    day = 'tuesday'
-    break;
-  case 3:
-    day = 'wednesday'
-    break;
-  case 4:
-    day = 'thursday'
-    break;
-  case 5:
-    day = 'friday'
-    break;
-  case 6:
-    day = 'saturday'
-    break;
-}
-console.log(`Today is ${day}`);
+// const color = 'bluee';
+// switch (color) {
+//   case 'red':
+//     console.log('color is red');
+//     break;
+//   case 'blue':
+//     console.log('color is blue');
+//     break;
+//   default:
+//     console.log('color is not blue & red');
+//     break;
+// } 
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = 'sunday'
+//     break;
+//   case 1:
+//     day = 'monday'
+//     break;
+//   case 2:
+//     day = 'tuesday'
+//     break;
+//   case 3:
+//     day = 'wednesday'
+//     break;
+//   case 4:
+//     day = 'thursday'
+//     break;
+//   case 5:
+//     day = 'friday'
+//     break;
+//   case 6:
+//     day = 'saturday'
+//     break;
+// }
+// console.log(`Today is ${day}`);
 
-(function(name){
-  console.log('Hello ' + name);
-})('Phone');
-//property method
-const todo = {
-  add:function(){
-    console.log('add todo');
-  },
-  edit:function(id){
-    console.log(`Edit todo ${id}`);
-  }
-}
-todo.delete = function(){
-  console.log('delete todo');
-}
-todo.add();
-todo.edit(22);
-todo.delete();
+// (function(name){
+//   console.log('Hello ' + name);
+// })('Phone');
+// //property method
+// const todo = {
+//   add:function(){
+//     console.log('add todo');
+//   },
+//   edit:function(id){
+//     console.log(`Edit todo ${id}`);
+//   }
+// }
+// todo.delete = function(){
+//   console.log('delete todo');
+// }
+// todo.add();
+// todo.edit(22);
+// todo.delete();
 
-//for loop
-for (let i = 0; i <= 10; i++) {
+// //for loop
+// for (let i = 0; i <= 10; i++) {
   
-  if (i === 2) {
-   console.log('2 is my fav'); 
-   continue;
-  }
-  if (i === 5) {
-    break;
-  }
-  console.log('number is ' + i);
-}
-//while loop
-// let i = 0;
-// while (i < 10) {
+//   if (i === 2) {
+//    console.log('2 is my fav'); 
+//    continue;
+//   }
+//   if (i === 5) {
+//     break;
+//   }
 //   console.log('number is ' + i);
-//   i++;
 // }
-//do while
-// let i = 0;
-// do{
-//   console.log('number is ' + i);
-//   i++;
-// }
-// while(i < 10);
- //loop through array
-const cars = ['ford','honda','toyota','chevrolet'];
-// for (let i = 0; i < cars.length; i++) {
-//   console.log(cars[i]);
-// }
-//foreach
-cars.forEach(function(car){
-  console.log(car);
-});
+// //while loop
+// // let i = 0;
+// // while (i < 10) {
+// //   console.log('number is ' + i);
+// //   i++;
+// // }
+// //do while
+// // let i = 0;
+// // do{
+// //   console.log('number is ' + i);
+// //   i++;
+// // }
+// // while(i < 10);
+//  //loop through array
+// const cars = ['ford','honda','toyota','chevrolet'];
+// // for (let i = 0; i < cars.length; i++) {
+// //   console.log(cars[i]);
+// // }
+// //foreach
+// cars.forEach(function(car){
+//   console.log(car);
+// });
 
 
-//map
-const users = [
-  {id:1,name:'phone'},
-  { id: 2, name: 'ha' },
-  { id: 3, name: 'he' }
-];
-const ids = users.map(function(user){
-return user.id;
-});
-console.log(ids);
+// //map
+// const users = [
+//   {id:1,name:'phone'},
+//   { id: 2, name: 'ha' },
+//   { id: 3, name: 'he' }
+// ];
+// const ids = users.map(function(user){
+// return user.id;
+// });
+// console.log(ids);
 
-//for in loop
-const user = {
-  firstname:"phone",
-  lastname:"keomany",
-  age:23
-}
-for (let x in user) {
- console.log(`${x}: ${user[x]}`)
-}
+// //for in loop
+// const user = {
+//   firstname:"phone",
+//   lastname:"keomany",
+//   age:23
+// }
+// for (let x in user) {
+//  console.log(`${x}: ${user[x]}`)
+// }
+
+//windows methods / objects/properties
+//prompt 
+// const input  = prompt();
+// alert(input);
+
+//confirm
+// if (confirm('are you sure')) {
+//   console.log('yes');
+// }else{
+//   console.log('no');
+// }
+
+let val;
+val = window.outerHeight;
+val = window.outerWidth;
+val = window.innerWidth;
+
+//scroll point
+val = window.scrollY;
+//val = window.scrollX;
+
+//location object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
+
+//history
+window.history.go(-1);
+val = window.history.length;
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.platform;
+console.log(val);
