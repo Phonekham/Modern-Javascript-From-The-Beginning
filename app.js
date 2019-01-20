@@ -236,3 +236,60 @@ todo.delete = function(){
 todo.add();
 todo.edit(22);
 todo.delete();
+
+//for loop
+for (let i = 0; i <= 10; i++) {
+  
+  if (i === 2) {
+   console.log('2 is my fav'); 
+   continue;
+  }
+  if (i === 5) {
+    break;
+  }
+  console.log('number is ' + i);
+}
+//while loop
+// let i = 0;
+// while (i < 10) {
+//   console.log('number is ' + i);
+//   i++;
+// }
+//do while
+// let i = 0;
+// do{
+//   console.log('number is ' + i);
+//   i++;
+// }
+// while(i < 10);
+ //loop through array
+const cars = ['ford','honda','toyota','chevrolet'];
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+//foreach
+cars.forEach(function(car){
+  console.log(car);
+});
+
+
+//map
+const users = [
+  {id:1,name:'phone'},
+  { id: 2, name: 'ha' },
+  { id: 3, name: 'he' }
+];
+const ids = users.map(function(user){
+return user.id;
+});
+console.log(ids);
+
+//for in loop
+const user = {
+  firstname:"phone",
+  lastname:"keomany",
+  age:23
+}
+for (let x in user) {
+ console.log(`${x}: ${user[x]}`)
+}
