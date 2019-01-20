@@ -133,35 +133,50 @@
 // console.log(numbers2);
 // console.log(val);
 
-const person = {
-  firstname:'Phonekham',
-  lastname:'Keomany',
-  age:23,
-  email:'phone@gmail.com',
-  hobbies:['music','coding','sports'],
-  address:{
-    city:'VT',
-    village:'khamhoung'
-  },
-  GetBirthYear:function(){
-    return 2018 - this.age;
-  }
-}
+// const person = {
+//   firstname:'Phonekham',
+//   lastname:'Keomany',
+//   age:23,
+//   email:'phone@gmail.com',
+//   hobbies:['music','coding','sports'],
+//   address:{
+//     city:'VT',
+//     village:'khamhoung'
+//   },
+//   GetBirthYear:function(){
+//     return 2018 - this.age;
+//   }
+// }
+// let val;
+// val = person;
+// //get specific value
+// val = person.firstname;
+// val = person['lastname'];
+// val = person.age;
+// val = person.hobbies[1];
+// val = person.address.city;
+// val = person.address['village'];
+// val = person.GetBirthYear();
+// console.log(val);
+// const people = [
+//   {name:'Phone',age:23},
+//   {name:'seng',age:22}
+// ];
+// for(let i = 0; i < people.length;i++){
+//   console.log(people[i].name);
+// }
+
 let val;
-val = person;
-//get specific value
-val = person.firstname;
-val = person['lastname'];
-val = person.age;
-val = person.hobbies[1];
-val = person.address.city;
-val = person.address['village'];
-val = person.GetBirthYear();
-console.log(val);
-const people = [
-  {name:'Phone',age:23},
-  {name:'seng',age:22}
-];
-for(let i = 0; i < people.length;i++){
-  console.log(people[i].name);
-}
+const today = new Date();
+let birthday = new Date('6/5/2017');
+val = today.getDay();
+val = today.getMonth();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getMilliseconds();
+val = today.getTime();
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setHours(3);
+console.log(birthday);
