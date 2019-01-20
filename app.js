@@ -166,17 +166,54 @@
 //   console.log(people[i].name);
 // }
 
-let val;
-const today = new Date();
-let birthday = new Date('6/5/2017');
-val = today.getDay();
-val = today.getMonth();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getMilliseconds();
-val = today.getTime();
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setHours(3);
-console.log(birthday);
+// let val;
+// const today = new Date();
+// let birthday = new Date('6/5/2017');
+// val = today.getDay();
+// val = today.getMonth();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getMilliseconds();
+// val = today.getTime();
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setHours(3);
+// console.log(birthday);
+
+const color = 'bluee';
+switch (color) {
+  case 'red':
+    console.log('color is red');
+    break;
+  case 'blue':
+    console.log('color is blue');
+    break;
+  default:
+    console.log('color is not blue & red');
+    break;
+} 
+switch (new Date().getDay()) {
+  case 0:
+    day = 'sunday'
+    break;
+  case 1:
+    day = 'monday'
+    break;
+  case 2:
+    day = 'tuesday'
+    break;
+  case 3:
+    day = 'wednesday'
+    break;
+  case 4:
+    day = 'thursday'
+    break;
+  case 5:
+    day = 'friday'
+    break;
+  case 6:
+    day = 'daturday'
+    break;
+}
+console.log(`Today is ${day}`)
