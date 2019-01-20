@@ -65,23 +65,70 @@
 //   //split
 
 // console.log(val);
-const name = "Phone";
-const  job = "Web Developer";
-const age = 23;
-const city = "VT";
-let html;
+// const name = "Phone";
+// const  job = "Web Developer";
+// const age = 23;
+// const city = "VT";
+// let html;
 
-//Without template strings(ES5)
-html = "<ul><li>name: " + name + "</li><li>age: " + age + "</li><li>job: " + job + "</li><li>city: " + city +"</li></ul>";
-//With template string(ES6)
-html = `
-<ul>
-  <li>Name:${name}</li>
-  <li>Age:${age}</li>
-  <li>Job:${job}</li>
-  <li>City:${city}</li>
-  <li>${age > 30 ? 'Over 30' : 'under 30'}</li>
-</ul>
-`
+// //Without template strings(ES5)
+// html = "<ul><li>name: " + name + "</li><li>age: " + age + "</li><li>job: " + job + "</li><li>city: " + city +"</li></ul>";
+// //With template string(ES6)
+// html = `
+// <ul>
+//   <li>Name:${name}</li>
+//   <li>Age:${age}</li>
+//   <li>Job:${job}</li>
+//   <li>City:${city}</li>
+//   <li>${age > 30 ? 'Over 30' : 'under 30'}</li>
+// </ul>
+// `
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
+
+//array
+const numbers = [34,44,66,3,54];
+const numbers2 = new Array(23,89,9,34,23);
+const fruit = ['Apple','Banna','orange'];
+const mixed = [22,"hi",true,undefined,null,{a:1,b:2},new Date()];
+let val;
+//get array lenght
+val = numbers.length;
+//check if array
+val = Array.isArray(numbers);
+val = numbers[3];
+//insert into array
+numbers2[2] = 100
+//mutateing array
+numbers2.push(22); //add to last
+numbers2.unshift(120); //add to first
+//take off from end
+numbers2.pop();
+//take off from front
+numbers2.shift();
+//splice
+numbers2.slice(1,3);
+
+//concatenate array
+val = numbers.concat(numbers2);
+//sorting array
+val = fruit.sort();
+val = numbers.sort();
+
+//use the compare function
+val = numbers.sort(function(x,y){
+return x-y;
+});
+//reverse sort
+val = numbers.sort(function (x, y) {
+  return y-x;
+});
+
+//find
+function under50(num){
+  return num < 50;
+}
+val = numbers.find(under50);
+
+console.log(numbers2);
+console.log(val);
