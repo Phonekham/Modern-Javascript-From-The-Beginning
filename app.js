@@ -213,7 +213,26 @@ switch (new Date().getDay()) {
     day = 'friday'
     break;
   case 6:
-    day = 'daturday'
+    day = 'saturday'
     break;
 }
-console.log(`Today is ${day}`)
+console.log(`Today is ${day}`);
+
+(function(name){
+  console.log('Hello ' + name);
+})('Phone');
+//property method
+const todo = {
+  add:function(){
+    console.log('add todo');
+  },
+  edit:function(id){
+    console.log(`Edit todo ${id}`);
+  }
+}
+todo.delete = function(){
+  console.log('delete todo');
+}
+todo.add();
+todo.edit(22);
+todo.delete();
