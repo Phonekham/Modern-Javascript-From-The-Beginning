@@ -13,3 +13,10 @@ tasktitle.style.background ='#333';
 tasktitle.textContent = 'Task list';
 tasktitle.innerText = 'My task';
 document.querySelector('li').style.color = 'red';
+
+//DOM mutiple selectors
+const items = document.getElementsByClassName('collection-item');
+console.log(items);
+console.log(items[0]);
+items[0].style.color = 'blue';
+const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
