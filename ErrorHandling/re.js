@@ -30,12 +30,25 @@ re = /Hel{2,}o/i; //Must occur at leaset {m} times
 // Parentheses() - Grouping
 re = /^([0-9]x){3}$/;
 
+// Shorthand charector classes
+re = /\w/ //Word charector  - alphanumeric or _
+re = /\w+/ // + = one or more
+re = /\W/ //None Word charector  
+re = /\d/ // Match any degit
+re = /\d+/ // Match any degit 0 or more times
+re = /\D/ //Match any none degit
+re = /\s/ //Match white space char
+re = /\S/ //Match none white space char
+re = /\Hell\b/i //Word boundary
 
+// Assertions
+re = /x(?=y)/; //Match x only if followed by y
+re = /x(?!y)/; //Match x only if not followed by y
 
 // String to match
 // const str = 'Gray?';
 // const str = 'Hellllllllo'
-const str = '3x3x3x';
+const str = 'xry';
 
 
 
