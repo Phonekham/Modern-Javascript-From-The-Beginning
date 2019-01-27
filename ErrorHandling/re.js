@@ -13,8 +13,30 @@ re = /gre?a?y/i; // Optional character
 re = /gre?a?y\?/i; // Escape character 
 
 
+// Brackets [] - Chartector Sets
+re =  /gr[ae]y/i; //Must be an a or e
+re = /[GF]ray/i; //Must be g or f
+re = /[^GF]ray/i; //Must match anything except g or f
+re = /[A-Z]ray/; //Match any uppercase letter
+re = /[a-z]ray/; //Match any lowercase letter
+re = /[A-Za-z]ray/; //Match any letter
+re = /[0-9][0-9]ray/; //Match any degit
+
+// Brackets [] - Quantifier
+re = /Hel{2}o/i;  //Must occur exactly {m} amount of times
+re = /Hel{2,5}o/i; //Must occur exactly {m} amount of times
+re = /Hel{2,}o/i; //Must occur at leaset {m} times
+
+// Parentheses() - Grouping
+re = /^([0-9]x){3}$/;
+
+
+
 // String to match
-const str = 'Gray?';
+// const str = 'Gray?';
+// const str = 'Hellllllllo'
+const str = '3x3x3x';
+
 
 
 // Log Results
